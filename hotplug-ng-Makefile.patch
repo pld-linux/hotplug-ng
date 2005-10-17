@@ -1,0 +1,20 @@
+--- hotplug-ng-002/Makefile.orig	2005-05-06 23:05:33.000000000 +0200
++++ hotplug-ng-002/Makefile	2005-10-17 22:34:10.000000000 +0200
+@@ -74,7 +74,7 @@
+ # to compile vs uClibc, that can be done here as well.
+ CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+ CC = $(CROSS)gcc
+-LD = $(CROSS)gcc
++LD = $(CC)
+ AR = $(CROSS)ar
+ STRIP = $(CROSS)strip
+ RANLIB = $(CROSS)ranlib
+@@ -281,7 +281,7 @@
+ uninstall-man:
+ 	- rm $(mandir)/man8/hotplug.8
+ 
+-install: all install-man
++install: install-man
+ 	$(INSTALL) -d $(DESTDIR)$(hotplugdir)
+ 	$(INSTALL) -d $(DESTDIR)$(hotplugdir)/ieee1394
+ 	$(INSTALL) -d $(DESTDIR)$(hotplugdir)/usb

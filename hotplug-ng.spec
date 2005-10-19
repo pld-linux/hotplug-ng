@@ -4,7 +4,8 @@
 # Conditional build:
 %bcond_with	verbose		# verbose build (V=1)
 #
-Summary:	hotplug-ng - /sbin/hotplug replacement and auto module loader in c
+Summary:	hotplug-ng - /sbin/hotplug replacement and auto module loader in C
+Summary(pl):	hotplug-ng - zamiennik /sbin/hotplug i automatyczny loader do modu³ów w C
 Name:		hotplug-ng
 Version:	002
 Release:	0.1
@@ -20,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sbindir	/sbin
 
 %description
-hotplug-ng - a /sbin/hotplug replacement and auto module loader in c.
+hotplug-ng - a /sbin/hotplug replacement and auto module loader in C.
 It currently provides the following:
 - a /sbin/hotplug multiplexer. Works identical to the existing bash
   /sbin/hotplug.
@@ -28,6 +29,16 @@ It currently provides the following:
   determine what module needs to be loaded when the kernel emits a
   hotplug event for these types of devices. This works just like the
   existing linux-hotplug scripts, with a few exceptions.
+
+%description -l pl
+hotplug-ng to zamiennik /sbin/hotplug i program do automatycznego
+³adowania modu³ów napisany w C. Aktualnie dostarcza:
+- multiplekser /sbin/hotplug - dzia³a tak samo, jak istniej±cy
+  /sbin/hotplug w bashu,
+- programy do automatycznego ³adowania modu³ów usb, scsi i pci -
+  okre¶laj±, który modu³ musi byæ za³adowany, kiedy j±dro generuje
+  zdarzenie hotplug dla tych rodzajów urz±dzeñ; dzia³a to tak, jak
+  istniej±ce skrypty linux-hotplug, z paroma wyj±tkami.
 
 %prep
 %setup -q
@@ -44,7 +55,6 @@ It currently provides the following:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/hotplug.d/default
 
 %{__make} install \

@@ -5,7 +5,7 @@
 %bcond_with	verbose		# verbose build (V=1)
 #
 Summary:	hotplug-ng - /sbin/hotplug replacement and auto module loader in C
-Summary(pl):	hotplug-ng - zamiennik /sbin/hotplug i automatyczny loader do modu³ów w C
+Summary(pl.UTF-8):   hotplug-ng - zamiennik /sbin/hotplug i automatyczny loader do moduÅ‚Ã³w w C
 Name:		hotplug-ng
 Version:	002
 Release:	0.1
@@ -30,15 +30,15 @@ It currently provides the following:
   hotplug event for these types of devices. This works just like the
   existing linux-hotplug scripts, with a few exceptions.
 
-%description -l pl
+%description -l pl.UTF-8
 hotplug-ng to zamiennik /sbin/hotplug i program do automatycznego
-³adowania modu³ów napisany w C. Aktualnie dostarcza:
-- multiplekser /sbin/hotplug - dzia³a tak samo, jak istniej±cy
+Å‚adowania moduÅ‚Ã³w napisany w C. Aktualnie dostarcza:
+- multiplekser /sbin/hotplug - dziaÅ‚a tak samo, jak istniejÄ…cy
   /sbin/hotplug w bashu,
-- programy do automatycznego ³adowania modu³ów usb, scsi i pci -
-  okre¶laj±, który modu³ musi byæ za³adowany, kiedy j±dro generuje
-  zdarzenie hotplug dla tych rodzajów urz±dzeñ; dzia³a to tak, jak
-  istniej±ce skrypty linux-hotplug, z paroma wyj±tkami.
+- programy do automatycznego Å‚adowania moduÅ‚Ã³w usb, scsi i pci -
+  okreÅ›lajÄ…, ktÃ³ry moduÅ‚ musi byÄ‡ zaÅ‚adowany, kiedy jÄ…dro generuje
+  zdarzenie hotplug dla tych rodzajÃ³w urzÄ…dzeÅ„; dziaÅ‚a to tak, jak
+  istniejÄ…ce skrypty linux-hotplug, z paroma wyjÄ…tkami.
 
 %prep
 %setup -q

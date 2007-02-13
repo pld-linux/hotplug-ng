@@ -5,7 +5,7 @@
 %bcond_with	verbose		# verbose build (V=1)
 #
 Summary:	hotplug-ng - /sbin/hotplug replacement and auto module loader in C
-Summary(pl.UTF-8):   hotplug-ng - zamiennik /sbin/hotplug i automatyczny loader do modułów w C
+Summary(pl.UTF-8):	hotplug-ng - zamiennik /sbin/hotplug i automatyczny loader do modułów w C
 Name:		hotplug-ng
 Version:	002
 Release:	0.1
